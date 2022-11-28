@@ -1,0 +1,9 @@
+h1{
+    font-size:50px; 
+    color: black; 
+    text-align: center;
+}
+.btn {
+    --bs-btn-padding-x:5px !important;
+    --bs-btn-padding-y:5px !important;
+}
