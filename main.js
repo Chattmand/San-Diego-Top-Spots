@@ -1,15 +1,13 @@
 $(document).ready(function() {
-// write your code here
-// FETCHING DATA FROM JSON FILE
+
 $.getJSON(
     "./data.json", 
     function (data) {
         
-        // ITERATING THROUGH OBJECTS
+       
         $.each(data, function (key, value) {
 
-            //CONSTRUCTION OF ROWS HAVING
-            // DATA FROM JSON OBJECT
+            
             var spot = `<tr> 
             <td>${value.name}</td>
             <td> ${value.description} </td>
@@ -20,7 +18,7 @@ $.getJSON(
             $('#spots').append(spot);
         });
 
-        //INSERTING ROWS INTO TABLE 
+    
 
     });
 }); 
